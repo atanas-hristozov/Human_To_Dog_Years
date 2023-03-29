@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Enter the human years");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        int humanYears =  Integer.parseInt(input);
+        int dogyears = 0;
+        if (humanYears <= 2) {
+            dogyears = humanYears * 10;
+        } else {
+            dogyears = 20 + (humanYears - 2) * 4;
+        }
+        System.out.println(dogyears);
+    }
+}
